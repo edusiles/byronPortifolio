@@ -14,6 +14,10 @@
 }
 
 .btn {
+   display: flex;
+   align-items: center;
+   gap: 0.5rem;
+
    background-color: var(--clr-primary);
    width: fit-content;
 
@@ -195,6 +199,10 @@ header nav a {
 }
 
 .base-list > li {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
    padding: 1rem;
    
    background-color:  var(--clr-primary);
@@ -213,6 +221,15 @@ header nav a {
 .conhecimentos-list {
    flex-wrap: wrap;
    gap: 20px;
+}
+
+.conhecimentos-list > li {
+   width: 72px;
+   height: 72px;
+}
+
+.conhecimentos-list > li > img {
+   width: 72px;
 }
 
 /* Contato */
@@ -239,8 +256,19 @@ header nav a {
 }
 
 #contato > ul > li {
+   display: flex;
+   align-items: center;
+   gap: 0.5rem;
+
    font-size: 18px;
    font-weight: 500;
+}
+
+.icon-wrapper {
+   display: flex;
+   justify-content: center;
+
+   width: 2rem;
 }
 
 #contato a {
